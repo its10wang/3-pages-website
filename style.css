@@ -1,0 +1,243 @@
+body, html{
+  margin:0px;
+  background-color:#eee;
+  height: 100%;
+  overflow: hidden;
+}
+.navBar{
+  word-spacing: 200px;
+  color:#202020;
+  font-size: 25px;
+  font-family: impact;
+  position: fixed;
+  background-color: #00CC00;
+  opacity: 0.8;
+  height:10%;
+  width: 100%;
+  text-align: center;
+  top:0px;
+}
+.HelpLine{
+  position:fixed;
+  font-family: sans-serif;
+  color:#202020;
+  font-size: 20px;
+  top:25px;
+  right:0px;
+}
+
+.mainContainer{
+  width: 800px;
+  display: block;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin:0 auto;
+  margin-top: 150px;
+  background-size: cover;
+  margin-bottom: 55px;
+    position: relative;
+  text-decoration: none;
+}
+
+.mainContainer:first-letter {
+  font-size: 30px;
+  padding: 0.1em;
+  color: #000000;
+  vertical-align: middle;
+}
+
+.mainContainer p:before{
+   content: "";
+   position: absolute;
+   left: 50%;
+   bottom: -10px;
+   width: 0;
+   height: 3px;
+   background: #333;
+   transition: all .3s;
+ }
+ .mainContainer p:hover:before{
+     width: 100%;
+     left: 0;
+     right: 0;
+ }
+
+.subContainer{
+  margin: 20px;
+  padding-left: 50px;
+  padding-top: 50px;
+  background-color: #99FF99;
+  text-shadow: #000000;
+  display: block;
+}
+.subContainer img{
+  display: block;
+  margin:0 auto;
+}
+.mainContainer2{
+  margin-left: 5px;
+  font-family: sans-serif;
+  margin-top:80px;
+  word-spacing: 2px;
+  font-size: 30px;
+  line-height:160%;
+  background-color: #99FF99;
+  height: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.mainContainer2 ul{
+  width: 70%;
+  margin:0 auto;
+}
+
+.mainContainer2 ul li{
+  list-style: none;
+}
+
+.mainContainer2 ul li:hover span:first-letter{
+  font-size: 40px;
+}
+
+.homeTitle{
+  text-align: center;
+  margin-top: 35px;
+}
+
+.homeTxt{
+  margin-top: 30px;
+  line-height: 25px;
+  padding-bottom: 30px;
+}
+
+.homeTxt:first-letter {
+  font-size: 30px;
+  padding: 0.1em;
+  color: #000000;
+  vertical-align: middle;
+}
+
+.mainContainer3 .pic{
+  display: block;
+  margin:100px auto 50px auto;
+  height: 505px;
+  width: 990px;
+  background-image: url(1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.mainContainer3 .pic:hover{
+  background-image: url(2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainContainer3 span{
+  font-size: 150px;
+  display: block;
+  text-align: center;
+  margin-top:100px;
+}
+
+.mainContainer3{
+  background:-webkit-radial-gradient(#fff,#000);/* Safari 5.1 - 6.0 */
+  background:-moz-radial-gradient(#fff,#000d);/* Firefox 3.6 - 15 */
+  background:-o-radial-gradient(#fff,#000);/* Opera 11.6 - 12.0 */
+  background:radial-gradient(#fff,#000);/* 标准 */
+  padding-bottom: 65px;
+}
+
+.animationBox{
+  width: 100%;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.animationBox span {
+  position: absolute;
+  left: calc((var(--n) - 1) * 15%);
+  animation: moving 2s linear infinite;
+  animation-delay: calc((var(--n) - 10) * 0.2s);
+  height: 3em;
+}
+
+@keyframes moving {
+  0% {
+    filter: opacity(0);
+    transform: rotate(-180deg);
+    left: 100%;
+  }
+  
+  33% {
+    filter: opacity(1);
+    transform: rotate(0deg);
+    left: 60%;
+  }
+  
+  66% {
+    filter: opacity(1);
+    transform: rotate(0deg);
+    left: 40%;
+  }
+  
+  100% {
+    filter: opacity(0);
+    transform: rotate(180deg);
+    left: 0%;
+  }
+}
+
+.animationBox span:nth-child(1) {
+  --n: 1;
+}
+.animationBox span:nth-child(2) {
+  --n: 2;
+}
+.animationBox span:nth-child(3) {
+  --n: 3;
+}
+.animationBox span:nth-child(4) {
+  --n: 4;
+}
+.animationBox span:nth-child(5) {
+  --n: 5;
+}
+.animationBox span:nth-child(6) {
+  --n: 6;
+}
+.animationBox span:nth-child(7) {
+  --n: 7;
+}
+
+.animationBox span:nth-child(8) {
+  --n: 8;
+}
+
+.demo1{
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+}
+.demo1:before{
+   content: "";
+   position: absolute;
+   left: 50%;
+   bottom: -10px;
+   width: 0;
+   height: 3px;
+   background: #333;
+   transition: all .3s;
+ }
+ .demo1:hover:before{
+     width: 100%;
+     left: 0;
+     right: 0;
+ }
